@@ -9,6 +9,8 @@
         <div *ngFor="let number of numbers">
           <li
             class="list-group-item"
+            [ngClass]="{ blue: onlyOdd }"
+            [ngStyle]="{ 'background-color': onlyOdd ? 'yellow' : 'white' }"
             *ngIf="onlyOdd ? number % 2 === 1 : number % 2 === 0"
           >
             {{ number }}

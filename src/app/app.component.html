@@ -21,6 +21,14 @@
         <p appBasicHighlight>Only odd- basic</p>
         <p [appBetterHighlight]="'red'">Only odd- better using renderer</p>
       </div>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="'1'">this will only show if value is 1</p>
+        <p *ngSwitchCase="'2'">this will only show if value is 2</p>
+        <p *ngSwitchCase="'3'">this will only show if value is 3</p>
+        <p *ngSwitchDefault>
+          this will only show if value is other than 1, 2 or 3
+        </p>
+      </div>
     </div>
   </div>
 </div>

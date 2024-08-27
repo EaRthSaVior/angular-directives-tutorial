@@ -19,7 +19,7 @@
       </ul>
       <ng-template [ngIf]="onlyOdd">
         <p appBasicHighlight>Only odd- basic</p>
-        <p appBetterHighlight>Only odd- better using renderer</p>
+        <p [appBetterHighlight]="'red'">Only odd- better using renderer</p>
       </ng-template>
     </div>
   </div>

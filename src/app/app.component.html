@@ -17,10 +17,10 @@
           </li>
         </div>
       </ul>
-      <ng-template [ngIf]="onlyOdd">
+      <div *appUnless="!onlyOdd">
         <p appBasicHighlight>Only odd- basic</p>
         <p [appBetterHighlight]="'red'">Only odd- better using renderer</p>
-      </ng-template>
+      </div>
     </div>
   </div>
 </div>
